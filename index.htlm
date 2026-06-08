@@ -1,35 +1,121 @@
-<!-- BANNIÈRE PRINCIPAL -->
-<section style="
-background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
-background-size: cover;
-background-position: center;
-padding: 120px 20px;
-text-align: center;
-color: white;
-">
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fondasyon Aksyon Ayisyen Kont Lamizè</title>
 
-<h1 style="font-size: 3em; margin-bottom: 10px;">
-Fondasyon Aksyon Ayisyen Kont Lamizè
-</h1>
+<style>
+body{
+font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+background:#f4f4f4;
+}
 
-<p style="font-size: 1.3em; max-width: 800px; margin: auto;">
-Ansanm pou ede fanmi vilnerab yo, sipòte edikasyon,
-sante ak devlopman kominotè atravè Ayiti.
-</p>
+header{
+background:#003049;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
 
-<br>
+header h1{
+font-size:3em;
+margin:0;
+}
 
-<a href="#don"
-style="
+header p{
+font-size:1.2em;
+max-width:800px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
 background:#d62828;
 color:white;
-padding:15px 35px;
 text-decoration:none;
-font-size:18px;
-border-radius:8px;
-font-weight:bold;">
-Fè yon Don
-</a>
+border-radius:5px;
+font-weight:bold;
+}
 
+section{
+padding:50px 20px;
+text-align:center;
+background:white;
+margin:20px;
+border-radius:10px;
+}
+
+footer{
+background:#003049;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Fondasyon Aksyon Ayisyen Kont Lamizè</h1>
+<p>
+Ansanm pou ede fanmi ki nan bezwen,
+ankouraje edikasyon, sante ak devlopman kominotè atravè Ayiti.
+</p>
+
+<a href="#don" class="btn">Fè yon Don</a>
+</header>
+
+<section>
+<h2>Misyon Nou</h2>
+
+<p>
+Fondasyon Aksyon Ayisyen Kont Lamizè travay pou pote espwa,
+sipò ak opòtinite pou timoun, jèn ak fanmi vilnerab yo.
+Nou kwè nan solidarite, lanmou ak devlopman dirab.
+</p>
 </section>
+
+<section id="don">
+<h2>Fè yon Don</h2>
+
+<h3>MonCash</h3>
+<p><strong>+509 3750 2678</strong></p>
+
+<h3>NatCash</h3>
+<p><strong>+509 4155 2692</strong></p>
+
+<p>
+Chak kontribisyon ede nou reyalize pwojè sosyal ak imanitè yo.
+</p>
+</section>
+
+<section>
+<h2>Kontakte Nou</h2>
+
+<p>Email : fondasyon.aaklam@gmail.com</p>
+
+<p>WhatsApp : +509 3750 2678</p>
+
+<p>
+Ayiti 🇭🇹
+</p>
+</section>
+
+<footer>
+<p>
+© 2026 Fondasyon Aksyon Ayisyen Kont Lamizè
+</p>
+
+<p>
+Devlope pou sèvi pèp Ayisyen an 🇭🇹
+</p>
+</footer>
+
+</body>
+</html>
