@@ -6,86 +6,85 @@
 <title>Fondasyon AHCM / AAKLAM</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:#f8f9fa;
-color:#333;
-line-height:1.7;
+margin:0;
+font-family:Arial, sans-serif;
+color:#1a1a1a;
+background:#f6f9fc;
 }
 
-/* MENU */
+/* NAV */
 nav{
 position:sticky;
 top:0;
-z-index:1000;
 background:#003049;
 padding:15px;
 text-align:center;
+z-index:1000;
 }
 
 nav a{
 color:white;
-text-decoration:none;
 margin:0 15px;
+text-decoration:none;
 font-weight:bold;
 }
 
-nav a:hover{
-color:#fcbf49;
-}
+nav a:hover{color:#fcbf49;}
 
 /* HERO */
 .hero{
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
 url('ahcm%202q.png');
 background-size:cover;
 background-position:center;
-min-height:85vh;
+height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
-padding:30px;
+padding:20px;
 }
 
-.hero h1{font-size:3rem;}
-.hero p{max-width:800px;font-size:1.2rem;}
+.hero h1{
+font-size:3rem;
+max-width:900px;
+}
+
+.hero p{
+max-width:700px;
+font-size:1.2rem;
+margin-top:15px;
+}
 
 .btn{
 margin-top:20px;
-padding:15px 30px;
 background:#fcbf49;
-color:#000;
-font-weight:bold;
+color:black;
+padding:15px 30px;
 text-decoration:none;
+font-weight:bold;
 border-radius:8px;
 }
 
 /* SECTIONS */
 section{
-padding:70px 20px;
+padding:80px 20px;
 max-width:1100px;
 margin:auto;
 }
 
 h2{
 text-align:center;
-margin-bottom:30px;
 color:#003049;
+margin-bottom:30px;
 }
 
 /* CARDS */
-.cards{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
@@ -93,8 +92,9 @@ gap:20px;
 
 .card{
 background:white;
-padding:20px;
-border-radius:10px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 /* GALLERY */
@@ -109,13 +109,34 @@ width:100%;
 height:250px;
 object-fit:cover;
 border-radius:10px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* STATS */
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:white;
+padding:30px;
+border-radius:12px;
+font-size:1.5rem;
+font-weight:bold;
 }
 
 /* DON */
 .donate{
 background:#e8f5e9;
-padding:30px;
-border-radius:10px;
+padding:40px;
+border-radius:12px;
 text-align:center;
 }
 
@@ -124,91 +145,118 @@ footer{
 background:#003049;
 color:white;
 text-align:center;
-padding:25px;
+padding:30px;
+margin-top:50px;
+}
+
+.small{
+font-size:0.9rem;
+opacity:0.8;
 }
 </style>
-
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
 <a href="#about">Kiyès Nou Ye</a>
 <a href="#mission">Misyon</a>
 <a href="#gallery">Galeri</a>
+<a href="#stats">Enpak</a>
 <a href="#don">Don</a>
 <a href="#contact">Kontak</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-<h1>Bay Chak Timoun Yon Chans Pou Rèv Yo Tounen Reyalite</h1>
-<p>Fondasyon AHCM / AAKLAM travay pou sipòte timoun nan vilnerabilite.</p>
+<h1>Chak Timoun Merite Yon Avni Pi Bèl</h1>
+<p>
+Fondasyon AHCM / AAKLAM ap travay pou bay timoun nan vilnerabilite
+edikasyon, pwoteksyon ak espwa pou yon lavi miyò.
+</p>
+
 <a href="#don" class="btn">Sipòte Nou</a>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
 <h2>Kiyès Nou Ye</h2>
-<p style="text-align:center;">Nou se yon fondasyon ki ede timoun ak fanmi nan bezwen.</p>
+<p style="text-align:center;max-width:800px;margin:auto;">
+Nou se yon òganizasyon imanitè ki konsantre sou amelyorasyon lavi timoun
+ak fanmi ki nan bezwen atravè edikasyon, asistans sosyal ak devlopman kominotè.
+</p>
 </section>
 
 <!-- MISSION -->
 <section id="mission">
 <h2>Misyon Nou</h2>
 
-<div class="cards">
-<div class="card">🎓 Edikasyon</div>
-<div class="card">🍲 Asistans Sosyal</div>
+<div class="grid">
+<div class="card">🎓 Edikasyon pou Timoun</div>
 <div class="card">🧒 Pwoteksyon Timoun</div>
-<div class="card">🌱 Devlopman</div>
+<div class="card">🍲 Asistans Imanitè</div>
+<div class="card">🌱 Devlopman Kominotè</div>
 </div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery">
-<h2>Galeri</h2>
+<h2>Galeri Enpak Nou</h2>
 
 <div class="gallery">
+<img src="ahcm%202q.png">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+</div>
 
-<!-- FOTO PRINCIPAL -->
-<img src="ahcm%202q.png" alt="Banner">
+<p class="small" style="text-align:center;margin-top:10px;">
+👉 Ranplase foto sa yo ak foto reyèl fondasyon an.
+</p>
+</section>
 
-<!-- FOTO YO -->
-<img src="photo1.jpg" alt="foto 1">
-<img src="photo2.jpg" alt="foto 2">
-<img src="photo3.jpg" alt="foto 3">
+<!-- STATS -->
+<section id="stats">
+<h2>Enpak Nou</h2>
 
-<!-- ESPAS POU AJOUTE PLIS -->
-<!-- ajoute nouvo foto isit -->
-
+<div class="stats">
+<div class="stat">100+ Timoun</div>
+<div class="stat">25+ Fanmi</div>
+<div class="stat">10+ Pwojè</div>
+<div class="stat">5+ Patnè</div>
 </div>
 </section>
 
 <!-- DON -->
 <section id="don">
-<h2>Fè Yon Don</h2>
+<h2>Sipòte Misyon an</h2>
 
 <div class="donate">
-<p>MonCash: +509 3750 2678</p>
-<p>NatCash: +509 4155 2692</p>
+<p><strong>MonCash:</strong> +509 3750 2678</p>
+<p><strong>NatCash:</strong> +509 4155 2692</p>
 
 <br>
-<a href="#" class="btn">PayPal RTLKradyotelelangajkreyol@gmail.com</a>
+
+<a href="#" class="btn">💙 PayPal Donate (ajoute lyen ou)</a>
 </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-<h2>Kontak</h2>
-<p>Email: fondasyon.aaklam@gmail.com</p>
-<p>Email: RTLKradyotelelangajkreyol@gmail.com</p>
-<p>WhatsApp: +509 3750 2678</p>
+<h2>Kontakte Nou</h2>
+<p style="text-align:center;">
+📧 fondasyon.aaklam@gmail.com<br>
+📧 rtlkradyotelelangajkreyol@gmail.com<br>
+📱 WhatsApp: +509 3750 2678
+</p>
 </section>
 
 <!-- FOOTER -->
 <footer>
-Fondasyon AHCM / AAKLAM © 2026
+<h3>Fondasyon AHCM / AAKLAM</h3>
+<p>Ankadreman • Edikasyon • Pwoteksyon • Espwa</p>
+<p class="small">© 2026 Tout dwa rezève</p>
 </footer>
 
 </body>
