@@ -20,7 +20,6 @@ color:#333;
 line-height:1.7;
 }
 
-/* MENU */
 nav{
 position:sticky;
 top:0;
@@ -28,6 +27,7 @@ z-index:1000;
 background:#003049;
 padding:15px;
 text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
 nav a{
@@ -41,7 +41,6 @@ nav a:hover{
 color:#fcbf49;
 }
 
-/* HERO */
 .hero{
 background:
 linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
@@ -58,10 +57,18 @@ color:white;
 padding:30px;
 }
 
-.hero h1{font-size:3rem;}
-.hero p{max-width:800px;font-size:1.2rem;}
+.hero h1{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:800px;
+font-size:1.2rem;
+}
 
 .btn{
+display:inline-block;
 margin-top:20px;
 padding:15px 30px;
 background:#fcbf49;
@@ -71,10 +78,13 @@ text-decoration:none;
 border-radius:8px;
 }
 
-/* SECTIONS */
+.btn:hover{
+background:#f7b733;
+}
+
 section{
 padding:70px 20px;
-max-width:1100px;
+max-width:1200px;
 margin:auto;
 }
 
@@ -84,7 +94,6 @@ margin-bottom:30px;
 color:#003049;
 }
 
-/* CARDS */
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -93,43 +102,60 @@ gap:20px;
 
 .card{
 background:white;
-padding:20px;
-border-radius:10px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+text-align:center;
+font-size:1.1rem;
+font-weight:bold;
 }
 
-/* GALLERY */
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
 }
 
 .gallery img{
 width:100%;
 height:250px;
 object-fit:cover;
-border-radius:10px;
+border-radius:12px;
+transition:0.3s;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
-/* DON */
+.gallery img:hover{
+transform:scale(1.03);
+}
+
 .donate{
 background:#e8f5e9;
 padding:30px;
-border-radius:10px;
+border-radius:12px;
 text-align:center;
 }
 
-/* FOOTER */
+.contact{
+text-align:center;
+}
+
 footer{
 background:#003049;
 color:white;
 text-align:center;
 padding:25px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2rem;
+}
 }
 </style>
 
 </head>
-
 <body>
 
 <nav>
@@ -140,20 +166,21 @@ padding:25px;
 <a href="#contact">Kontak</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
 <h1>Bay Chak Timoun Yon Chans Pou Rèv Yo Tounen Reyalite</h1>
-<p>Fondasyon AHCM / AAKLAM travay pou sipòte timoun nan vilnerabilite.</p>
+<p>
+Fondasyon AHCM / AAKLAM angaje l pou ede timoun, fanmi ak kominote ki nan sitiyasyon difisil atravè edikasyon, asistans sosyal ak devlopman imen.
+</p>
 <a href="#don" class="btn">Sipòte Nou</a>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
 <h2>Kiyès Nou Ye</h2>
-<p style="text-align:center;">Nou se yon fondasyon ki ede timoun ak fanmi nan bezwen.</p>
+<p style="text-align:center;max-width:900px;margin:auto;">
+Fondasyon AHCM / AAKLAM se yon òganizasyon imanitè ki travay pou amelyore lavi timoun ak fanmi ki pi vilnerab yo. Nou kwè chak timoun merite edikasyon, pwoteksyon ak opòtinite pou reyisi.
+</p>
 </section>
 
-<!-- MISSION -->
 <section id="mission">
 <h2>Misyon Nou</h2>
 
@@ -161,61 +188,55 @@ padding:25px;
 <div class="card">🎓 Edikasyon</div>
 <div class="card">🍲 Asistans Sosyal</div>
 <div class="card">🧒 Pwoteksyon Timoun</div>
-<div class="card">🌱 Devlopman</div>
+<div class="card">🌱 Devlopman Kominotè</div>
 </div>
+
 </section>
 
-<!-- GALLERY -->
 <section id="gallery">
-<h2>Galeri</h2>
+<h2>Galeri Foto</h2>
 
 <div class="gallery">
 
-<!-- FOTO PRINCIPAL -->
-<img src="ahcm%202q.png" alt="Banner">
+<img src="ahcm%202q.png" alt="Fondasyon AAKLAM">
 
-<!-- FOTO YO -->
-<section id="gallery">
-
-<h2>Galeri Foto</h2>
 <img src="https://images.pexels.com/photos/8617740/pexels-photo-8617740.jpeg" alt="Timoun nan edikasyon">
-  
+
 <img src="https://images.pexels.com/photos/6647037/pexels-photo-6647037.jpeg" alt="Aksyon kominotè">
-  
+
 <img src="https://images.pexels.com/photos/8923760/pexels-photo-8923760.jpeg" alt="Travay volontè ONG">
 
-</section>
+<img src="https://images.pexels.com/photos/8422103/pexels-photo-8422103.jpeg" alt="Timoun ap aprann">
 
-<!-- ESPAS POU AJOUTE PLIS -->
-<!-- ajoute nouvo foto isit -->
+<img src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg" alt="Timoun lekòl">
+
+<img src="https://images.pexels.com/photos/8926556/pexels-photo-8926556.jpeg" alt="Edikasyon timoun">
 
 </div>
 </section>
 
-<!-- DON -->
 <section id="don">
 <h2>Fè Yon Don</h2>
 
 <div class="donate">
-<p>MonCash: +509 3750 2678</p>
-<p>NatCash: +509 4155 9406</p>
+<p><strong>MonCash:</strong> +509 3750 2678</p>
+<p><strong>NatCash:</strong> +509 4155 9406</p>
 
 <br>
-<a href="#" class="btn">PayPal (ranplase lyen)</a>
+
+<a href="#" class="btn">PayPal (Ajoute lyen ou)</a>
 </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="contact">
 <h2>Kontak</h2>
-<p>Email: fondasyon.aaklam@gmail.com</p>
-<p>WhatsApp: +509 3750 2678</p>
+<p><strong>Email:</strong> fondasyon.aaklam@gmail.com</p>
+<p><strong>WhatsApp:</strong> +509 3750 2678</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-Fondasyon AHCM / AAKLAM © 2026
+Fondasyon AHCM / AAKLAM © 2026 — Tout dwa rezève.
 </footer>
 
 </body>
-</html>  
+</html>
